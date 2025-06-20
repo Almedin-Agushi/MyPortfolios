@@ -49,7 +49,7 @@ function Hero() {
         </motion.p>
 
         <motion.a
-          href="/AlmedinAgushi-CV.pdf"
+          href="/Almedin--Agushi-CV.pdf"
           download
           className="inline-block bg-blue-600 !text-white px-6 py-3 rounded-xl hover:bg-blue-700 
                      transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-sm sm:text-base"
