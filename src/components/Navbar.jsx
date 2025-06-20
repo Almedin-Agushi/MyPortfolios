@@ -15,7 +15,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-blue-600">My Portfolios</h1>
+        <h1 className="text-xl font-bold text-blue-600">MyPortfolio</h1>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6">
