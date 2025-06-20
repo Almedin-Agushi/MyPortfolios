@@ -80,9 +80,9 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Personal Portfolio",
-      description: "Built with React and Tailwind CSS to showcase my skills and projects.",
-      link: "#"
+      title: "Portfolio",
+      description: "Built with React+vite and Tailwind CSS to showcase my skills and projects.",
+      link: "https://github.com/Almedin-Agushi/MyPortfolios"
     },
     {
       title: "BusinessPro Theme – WordPress Theme for Businesses and Hotels",
