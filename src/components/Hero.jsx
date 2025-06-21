@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 const MotionDiv = motion.div;
 function Hero() {
   return (
-    <section className="relative bg-gradient-to-r from-blue-100 to-purple-200 py-20 sm:py-24 px-4 sm:px-8 text-center overflow-hidden">
+    <section
+      className="relative bg-gradient-to-r from-blue-100 to-purple-200 text-center overflow-hidden px-4 sm:px-8"
+      style={{ height: '500px' }}
+    >
       {/* SVG wave në fund */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
         <svg
@@ -19,12 +22,10 @@ function Hero() {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto px-4">
-        <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-snug"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+      <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center justify-center h-full">
+        <h1
+          className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-snug min-h-[70px] sm:min-h-[90px] max-w-lg mx-auto"
+          style={{ overflowWrap: 'break-word' }}
         >
           <TypeAnimation
             sequence={[
@@ -37,10 +38,10 @@ function Hero() {
             speed={50}
             repeat={Infinity}
           />
-        </motion.h1>
+        </h1>
 
         <motion.p
-          className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed"
+          className="text-base sm:text-lg text-gray-700 mt-8 mb-6 leading-relaxed max-w-md mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
