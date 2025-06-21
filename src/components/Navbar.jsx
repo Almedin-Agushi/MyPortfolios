@@ -15,7 +15,8 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-xl font-bold text-blue-600">MyPortfolio</h1>
+       <h1 className="text-xl font-bold text-blue-600 whitespace-nowrap">MyPortfolio</h1>
+
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6">
@@ -27,7 +28,8 @@ export default function Navbar() {
 
         {/* Mobile hamburger button */}
         <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl text-blue-600 focus:outline-none">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl text-blue-600 dark:text-blue-600 focus:outline-none">
+
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
         </div>
