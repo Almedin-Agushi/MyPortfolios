@@ -75,46 +75,65 @@
 // }
 
 
+import { motion } from "framer-motion";
+const MotionDiv = motion.div;
+
 export default function Projects() {
   const projects = [
     {
-      title: "Portfolio",
-      description: "Built with React+vite and Tailwind CSS to showcase my skills and projects.",
-      link: "https://github.com/Almedin-Agushi/MyPortfolios"
+      title: "MyPortfolio",
+      description:
+        "Built with React+Vite and Tailwind CSS to showcase my skills and projects.",
+      link: "https://github.com/Almedin-Agushi/MyPortfolios",
     },
     {
       title: "BusinessPro Theme – WordPress Theme for Businesses and Hotels",
-      description: "A custom-built WordPress theme from scratch, designed for promoting businesses or hotels. It features a responsive design, dynamic content fields using ACF, and integration of modern technologies such as JavaScript, PHP, and SASS.",
-      link: "https://github.com/Almedin-Agushi/alphatheme2"
+      description:
+        "A custom-built WordPress theme from scratch, designed for promoting businesses or hotels. It features a responsive design, dynamic content fields using ACF, and integration of modern technologies such as JavaScript, PHP, and SASS.",
+      link: "https://github.com/Almedin-Agushi/alphatheme2",
     },
     {
       title: "FreelanceHub Theme – WordPress Theme for Freelancers and Job Listings",
-      description: "A modern and lightweight WordPress theme built from scratch for freelance platforms or job listing websites. It uses PHP for backend functionality, Tailwind CSS for responsive and clean design, and JavaScript for interactivity. Ideal for showcasing freelance gigs, posting jobs, and connecting clients with professionals.",
-      link: "https://github.com/Almedin-Agushi/freelancer"
-    }
+      description:
+        "A modern and lightweight WordPress theme built from scratch for freelance platforms or job listing websites. Built using PHP, Tailwind CSS, and JavaScript. Ideal for connecting freelancers with clients.",
+      link: "https://github.com/Almedin-Agushi/freelancer",
+    },
   ];
 
   return (
-    <section id="projects" className="bg-gray-50 py-20 px-6">
+    <section id="projects" className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           My Projects
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <motion.div
+              key={index}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-left"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">{project.title}</h3>
-              <p className="text-gray-700 mb-4">{project.description}</p>
-              <a href={project.link} className="text-sm text-blue-500 hover:underline">
+              <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-500 hover:underline"
+              >
                 View Project →
               </a>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
 }
+
 
 
 
