@@ -75,8 +75,6 @@
 // }
 
 
-
-// File: src/components/Projects.jsx
 export default function Projects() {
   const projects = [
     {

@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-gray-100 py-6 px-4 text-center text-sm text-gray-600">
-        {/* Ikonat e rrjeteve sociale + info */}
+
         <div className="mb-3 flex flex-wrap justify-center items-center gap-5 text-xl">
           <a
             href="https://github.com/Almedin-Agushi/"
@@ -36,7 +36,6 @@ function Footer() {
             <FaEnvelope className="hover:text-red-500 transition" />
           </a>
 
-          {/* Info Icon Button */}
           <button
             onClick={() => setIsOpen(true)}
             title="About this portfolio"
@@ -47,13 +46,13 @@ function Footer() {
           </button>
         </div>
 
-        {/* Copyright */}
+        
         <p className="text-xs sm:text-sm">
           © {new Date().getFullYear()} Almedin Agushi. All rights reserved.
         </p>
       </footer>
 
-      {/* Popup Info */}
+      
       <InfoPopup isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

@@ -1,4 +1,4 @@
-// File: src/components/Contact.jsx
+
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
@@ -12,7 +12,7 @@ export default function Contact() {
         </p> */}
 
         <div className="grid sm:grid-cols-2 gap-8 text-left">
-          {/* Email */}
+          
           <div className="flex items-start gap-4">
             <FaEnvelope className="text-blue-600 text-xl mt-1" />
             <div>
@@ -21,7 +21,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Phone 1 */}
+    
           <div className="flex items-start gap-4">
             <FaPhone className="text-blue-600 text-xl mt-1" />
             <div>
@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Phone 2 */}
+          
           <div className="flex items-start gap-4">
             <FaPhone className="text-blue-600 text-xl mt-1" />
             <div>
@@ -39,7 +39,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Location */}
+          
           <div className="flex items-start gap-4">
             <FaMapMarkerAlt className="text-blue-600 text-xl mt-1" />
             <div>

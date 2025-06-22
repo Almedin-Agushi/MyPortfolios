@@ -14,7 +14,7 @@ export default function InfoPopup({ isOpen, setIsOpen }) {
             className="fixed inset-0 bg-black z-40"
           />
 
-          {/* Popup Box */}
+         
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

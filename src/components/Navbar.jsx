@@ -14,11 +14,11 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full bg-white shadow z-50 px-6 py-4"
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo */}
+    
        <h1 className="text-xl font-bold text-blue-600 whitespace-nowrap">MyPortfolio</h1>
 
 
-        {/* Desktop menu */}
+        
         <ul className="hidden md:flex space-x-6">
           <li><a href="#about" className="text-gray-700 hover:text-blue-600">About</a></li>
           <li><a href="#skills" className="text-gray-700 hover:text-blue-600">Skills</a></li>
@@ -26,7 +26,7 @@ export default function Navbar() {
           <li><a href="#contact" className="text-gray-700 hover:text-blue-600">Contact</a></li>
         </ul>
 
-        {/* Mobile hamburger button */}
+       
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-3xl text-blue-600 dark:text-blue-600 focus:outline-none">
 
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      
       {menuOpen && (
         <motion.ul
           initial={{ opacity: 0, y: -10 }}

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-100">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-10">
-        {/* Foto në anën e majtë */}
+        
         <div className="w-full md:w-1/2 flex justify-center">
           <img 
             src={myPhoto} 
@@ -14,7 +14,7 @@ const About = () => {
           />
         </div>
 
-        {/* Teksti në anën e djathtë */}
+       
         <div className="w-full md:w-1/2 text-center md:text-left px-2">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 animate-fade-in">
             About Me
