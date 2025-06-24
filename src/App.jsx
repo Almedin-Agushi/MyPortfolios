@@ -6,14 +6,14 @@ import Contact from './components/Contact';
 import Skills from "./components/Skills";
 import Footer from './components/Footer';
 import SectionWrapper from "./components/SectionWrapper";
-import ParticlesBG from './components/ParticlesBG';
+
 
 import './App.css';
 
 function App() {
   return (
-    <div className="pt-20 relative min-h-screen overflow-hidden">
-      <ParticlesBG />
+    <div className="pt-20">
+  
       <Navbar />
      
      <SectionWrapper>
