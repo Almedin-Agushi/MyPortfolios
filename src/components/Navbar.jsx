@@ -15,7 +15,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
     
-       <h1 className="text-xl font-bold text-blue-600 whitespace-nowrap">MyPortfolio</h1>
+       <h1 className="text-xl font-bold text-black whitespace-nowrap">Alm<span className="text-blue-600">edin</span>  </h1>
 
 
         
