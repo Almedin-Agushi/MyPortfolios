@@ -15,7 +15,18 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
     
-       <h1 className="text-xl font-bold text-black whitespace-nowrap">Alm<span className="text-blue-600">edin</span>  </h1>
+        <a href="/" className="flex items-center space-x-2 h-full">
+ 
+    <img 
+      src="/icon.png" 
+      alt="Logo" 
+      className="h-12 w-12 sm:h-16 sm:w-16 md:h-15 md:w-15 object-contain" 
+    />
+  
+    {/* <span className="text-lg sm:text-xl md:text-3xl font-bold text-black">
+      Alm<span className="text-blue-600">edin</span>
+    </span> */}
+  </a>
 
 
         

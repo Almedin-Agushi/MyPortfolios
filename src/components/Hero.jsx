@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { Helmet } from "react-helmet";
 const MotionDiv = motion.div;
 function Hero() {
   return (
@@ -7,6 +8,14 @@ function Hero() {
       className="relative bg-gradient-to-r from-blue-100 to-purple-200 text-center overflow-hidden px-4 sm:px-8"
       style={{ height: '500px' }}
     >
+
+    <Helmet>
+            <title>About | Almedin Agushi</title>
+            <meta
+              name="description"
+              content="Learn more about Almedin Agushi, a passionate web developer."
+            />
+          </Helmet>
       {/* SVG wave në fund */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
          <svg
